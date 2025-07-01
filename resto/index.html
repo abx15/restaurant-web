@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Feast Restaurant | Fine Dining Experience</title>
+    <link rel="stylesheet" href="css/restorent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Royal Feast</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="reservation-btn">Reservations</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience Culinary Excellence</h1>
+            <p class="subtitle">Where every meal is a celebration</p>
+            <div class="hero-btns">
+                <a href="#menu" class="cta-btn">View Menu</a>
+                <a href="#contact" class="cta-btn outline">Book a Table</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Exquisite Menu</h2>
+                <p class="section-subtitle">Carefully crafted by our master chefs</p>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="mains">Main Course</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-grid">
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="https://img.freepik.com/free-photo/front-view-burger-with-veggies-meat_23-2148868238.jpg" alt="Royal Burger">
+                        <span class="veg-icon"><i class="fas fa-leaf"></i></span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Royal Signature Burger</h3>
+                        <p>Premium Angus beef patty with aged cheddar, caramelized onions, and our secret sauce</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹499</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1649688423692-308d2fc1027d" alt="Truffle Pizza">
+                        <span class="veg-icon"><i class="fas fa-leaf"></i></span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Truffle Infused Pizza</h3>
+                        <p>Wood-fired pizza with wild mushrooms, truffle oil, and mozzarella di bufala</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹699</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1622617060679-216eb5456e48" alt="Specialty Coffee">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Ethiopian Single Origin Coffee</h3>
+                        <p>Handcrafted pour-over with floral and citrus notes</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹249</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="mains">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1570549986390-6bd150ac3515" alt="Lobster Pasta">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Lobster Linguine</h3>
+                        <p>Fresh lobster meat with handmade pasta in a saffron cream sauce</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹1299</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1726824863833-e88146cf0a72" alt="Sushi Platter">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Chef's Sushi Selection</h3>
+                        <p>12-piece omakase selection featuring seasonal fish</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹1499</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1597648152428-f883fbc9c873" alt="Chocolate Dessert">
+                        <span class="veg-icon"><i class="fas fa-leaf"></i></span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Molten Chocolate Sphere</h3>
+                        <p>Warm chocolate sphere with caramelized white chocolate and vanilla ice cream</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹399</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="starters">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1722032617357-7b09276b1a8d" alt="Salad">
+                        <span class="veg-icon"><i class="fas fa-leaf"></i></span>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Heirloom Tomato Salad</h3>
+                        <p>Heritage tomatoes with burrata, basil oil, and aged balsamic</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹449</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-item" data-category="drinks">
+                    <div class="menu-item-img">
+                        <img src="https://images.unsplash.com/photo-1600718374662-0483d2b9da44" alt="Cocktail">
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Signature Royal Martini</h3>
+                        <p>House-infused gin with elderflower and cucumber</p>
+                        <div class="menu-item-footer">
+                            <span class="price">₹599</span>
+                            <button class="add-to-cart">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p class="section-subtitle">A legacy of culinary excellence</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Founded in 2025 by Chef Rajan Yadav , Royal Feast began as a passion project to bring world-class dining to Prayagraj. What started as a small 30-seat restaurant has now blossomed into one of the city's most celebrated dining destinations.</p>
+                    <p>Our philosophy is simple: source the finest ingredients, respect traditional techniques while embracing innovation, and create memorable experiences for every guest. We work closely with local farmers and global suppliers to bring you seasonal menus that celebrate the best flavors from around the world.</p>
+                    <p>The Royal Feast team includes award-winning chefs, expert mixologists, and hospitality professionals dedicated to making your visit exceptional. From intimate dinners to grand celebrations, we're honored to be part of your special moments.</p>
+                    
+                    <div class="awards">
+                        <h3>Recognition & Awards</h3>
+                        <div class="awards-grid">
+                            <div class="award">
+                                <i class="fas fa-award"></i>
+                                <span>Feb 2025 Times Food Award</span>
+                            </div>
+                            <div class="award">
+                                <i class="fas fa-award"></i>
+                                <span> March 2025 Best Fine Dining - UP</span>
+                            </div>
+                            <div class="award">
+                                <i class="fas fa-award"></i>
+                                <span> May 2025 Chef's Choice Award</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Restaurant Interior">
+                    <div class="experience-badge">
+                        <span>5+ Years</span>
+                        <small>of Culinary Excellence</small>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chef-section">
+                <h3>Meet Our Master Chef</h3>
+                <div class="chef-profile">
+                    <div class="chef-image">
+                        <img src="img/rajan.jpeg" alt="Chef Rajan Yadav">
+                    </div>
+                    <div class="chef-details">
+                        <h4>Chef Arjun Mehra</h4>
+                        <p class="chef-title">Executive Chef & Founder</p>
+                        <p>With over 15 years of experience in Michelin-starred restaurants across Europe and Asia, Chef Arjun brings a global perspective to Indian dining. His innovative approach to flavor combinations has earned him numerous accolades in the culinary world.</p>
+                        <div class="chef-signature">
+                            <img src="https://via.placeholder.com/150x50" alt="Chef's Signature">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Reservations & Contact</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>12, Civil Lines<br>Prayagraj, Uttar Pradesh 211001</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Phone</h4>
+                        <p>+91 98765 43210<br>+91 522 1234567</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>reservations@royalfeast.com<br>info@royalfeast.com</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Hours</h4>
+                        <p>Monday - Friday: 11am - 11pm<br>
+                        Saturday - Sunday: 10am - 12am</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16QU53HraS/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/____abx15?igsh=cXNmb3B5aGt5NnBu"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/ArunKum41290508?t=AOeWHTBCPJEMO1a950POVA&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/abx15"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Book a Table</h3>
+                    <form id="reservation-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group double">
+                            <select required>
+                                <option value="" disabled selected>Number of Guests</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 People</option>
+                                <option value="3-4">3-4 People</option>
+                                <option value="5-6">5-6 People</option>
+                                <option value="7+">7+ People</option>
+                            </select>
+                            <select required>
+                                <option value="" disabled selected>Time</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests (Allergies, Occasion, etc.)"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Confirm Reservation</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.506635410433!2d81.84621431501403!3d25.45098398377617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acb7c5a8e5e6d%3A0x3117b3c1a3e4e3a4!2sCivil%20Lines%2C%20Prayagraj%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Royal Feast</h3>
+                    <p>Where culinary dreams come true</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for updates and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Royal Feast Restaurant. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
