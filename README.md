@@ -49,5 +49,5 @@ A modern and responsive **Restaurant Website** built using **HTML**, **CSS**, **
 
 📍 Location: Pryagraj, Utter Pradesh
 
-🔗 Website: [https://taupe-fox-7af636.netlify.app/]
+🔗 Website: [https://arun15dev.netlify.app]
 
